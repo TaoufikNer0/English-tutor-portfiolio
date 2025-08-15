@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books for Sale | Anass English Tutor</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Stripe.js -->
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:rgba(85,88,121,0.95);backdrop-filter:blur(10px);padding:1.5rem 0;box-shadow:0 4px 20px rgba(0,0,0,0.15);">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="index.html" style="color:#F4EBD3;font-weight:900;font-size:2.8rem;letter-spacing:6px;text-transform:uppercase;font-family:'Montserrat','Poppins','Bebas Neue',Arial,sans-serif;">
+        <span role="img" aria-label="book" style="margin-right:0.8rem;font-size:2.6rem;">📖</span> Anass
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border:2px solid #F4EBD3;padding:0.5rem;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav" style="gap:2rem;">
+          <li class="nav-item"><a class="nav-link fw-bold" href="index.html#home" style="color:#F4EBD3;font-size:1.3rem;letter-spacing:2px;text-transform:uppercase;transition:all 0.3s ease;position:relative;">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="index.html#about" style="color:#F4EBD3;font-size:1.3rem;letter-spacing:2px;text-transform:uppercase;transition:all 0.3s ease;position:relative;">About Me</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="index.html#services" style="color:#F4EBD3;font-size:1.3rem;letter-spacing:2px;text-transform:uppercase;transition:all 0.3s ease;position:relative;">Services</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="index.html#contact" style="color:#F4EBD3;font-size:1.3rem;letter-spacing:2px;text-transform:uppercase;transition:all 0.3s ease;position:relative;">Contact</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold active" href="books.html" style="color:#F4EBD3;font-size:1.3rem;letter-spacing:2px;text-transform:uppercase;transition:all 0.3s ease;position:relative;">My Books</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Books Section -->
+  <div class="container-fluid py-5" style="background:linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);min-height:100vh;padding-top:8rem;">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h1 class="text-center fw-bold mb-3 my-books-title" style="font-size:2.5rem;color:#2d3142;letter-spacing:2px;margin-top:6rem;line-height:1.2;">
+            My Books
+          </h1>
+          <hr class="mx-auto" style="width:60px;border:2px solid #3a86ff;opacity:0.5;">
+        </div>
+      </div>
+      <!-- Message Display -->
+      <div id="message" class="alert d-none" style="max-width:800px;margin:1.5rem auto;"></div>
+      <!-- Loading Spinner -->
+      <div id="loading" class="text-center d-none">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-2">Loading books...</p>
+      </div>
+      <!-- Books Grid -->
+      <div id="booksGrid" class="row g-4 justify-content-center">
+        <!-- Books will be loaded here via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4" style="background:#555879;color:#F4EBD3;">
+    <p class="mb-1">&copy; <span id="year"></span> Created by: Taoufik Zayot. All rights reserved.</p>
+    <div class="mt-2">
+      <a href="https://www.linkedin.com/in/taoufik-zayot-2b375927a/" style="color:#F4EBD3;margin:0 1rem;">LinkedIn</a>
+      <a href="https://www.instagram.com/taoufikner0/" style="color:#F4EBD3;margin:0 1rem;">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html> 
